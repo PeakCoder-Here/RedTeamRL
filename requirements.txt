@@ -1,0 +1,31 @@
+# ──────────────────────────────────────────────────────────────
+# RedTeamRL — Requirements
+# Tested: Python 3.13 / Windows (CPU-only)
+#
+# Install:
+#   pip install -r requirements.txt --break-system-packages
+#   (or inside a venv — preferred)
+# ──────────────────────────────────────────────────────────────
+
+# ── Core RL ───────────────────────────────────────────────────
+gymnasium>=0.29.1
+stable-baselines3>=2.3.2
+sb3-contrib>=2.3.0          # For MaskablePPO upgrade path (optional)
+
+# ── Deep Learning backend (CPU build) ─────────────────────────
+# PyTorch 2.5+ ships Python 3.13 wheels on PyPI
+torch>=2.5.0
+
+# ── Network simulation ────────────────────────────────────────
+networkx>=3.3
+
+# ── Numerical ─────────────────────────────────────────────────
+numpy>=1.26.4
+
+# ── Visualisation ─────────────────────────────────────────────
+matplotlib>=3.9.0
+pandas>=2.2.0
+
+# ── Logging / monitoring ──────────────────────────────────────
+tensorboard>=2.16.0
+tqdm>=4.66.4

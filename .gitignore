@@ -1,0 +1,28 @@
+# Virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Model checkpoints (keep final models, ignore intermediates)
+models/checkpoints/
+
+# TensorBoard event files (large)
+logs/PPO_*/
+logs/eval_monitor*
+logs/monitor_*
+
+# Keep the visualizations
+!logs/attack_path.png
+!logs/training_curves.png
+
+# IDE
+.vscode/
+*.code-workspace
+
+# Windows
+Thumbs.db
+Desktop.ini
