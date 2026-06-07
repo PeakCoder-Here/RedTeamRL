@@ -238,3 +238,20 @@ Compromise rate should reach **40–70 %** after 500 k steps on CPU.
 - TensorBoard integration for training observability
 - Action masking interface for improved sample efficiency
 - Matplotlib dark-mode network topology visualisation
+
+- ## Results
+
+### Training Metrics (500k steps, MaskablePPO)
+![Training Curves](assets/training_curves.png)
+
+### Learned Attack Path
+![Attack Path](assets/attack_path.png)
+
+| Metric | Value |
+|---|---|
+| **Compromise Rate** | 100% |
+| **Mean Episode Length** | ~50 steps |
+| **Mean Reward** | +310 |
+| **Training Time** | 20.7 min (CPU only) |
+| **Algorithm** | MaskablePPO (sb3-contrib) |
+| **Kill Chain** | DMZ → FW-1 → Corporate → FW-2 → AD Root |
